@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout style="@style/heading"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <LinearLayout
+            android:id="@+id/evhomemenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/menu_home"
+            android:layout_marginRight="20dp"
+			android:onClick="MostrarHome"/>
+        <LinearLayout
+            android:id="@+id/evtareasmenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/menu_tareas"
+            android:layout_marginRight="20dp"
+			android:onClick="MostrarTareas"/>
+        <LinearLayout
+            android:id="@+id/evinformemenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@mipmap/tareasmenu"
+            android:layout_marginRight="20dp"/>
+        <LinearLayout
+            android:id="@+id/evcalendariomenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/menu_calendario"
+            android:layout_marginRight="20dp"
+			android:onClick="MostrarCalendario"/>
+        <LinearLayout
+            android:id="@+id/evmensajeriamenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/menu_mensajeria"
+            android:layout_marginRight="80dp"
+			android:onClick="MostrarMensajeria"/>
+        <LinearLayout
+            android:id="@+id/evconfigmenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/menu_configuracion"
+            android:layout_marginRight="10dp"
+			android:onClick="MostrarMenuConfig"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#ccc"/>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="Informe General"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="#125829"/>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:background="#125829"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="90%"
+                        android:textColor="#fff"
+                        android:textSize="40dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ASISTENCIA A CLASE"
+                        android:textColor="#fff"
+                        android:gravity="center"
+                        android:textSize="12dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:background="#ff8c00"
+                    android:layout_marginLeft="25dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="83%"
+                        android:textColor="#fff"
+                        android:textSize="40dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ENTREGA DE TAREAS"
+                        android:textColor="#fff"
+                        android:gravity="center"
+                        android:textSize="12dp"/>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#ff8c00"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="15dp"
+                android:text="PROMEDIO GENERAL DEL ALUMNO:"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7.8"
+                android:layout_marginLeft="15dp"
+                android:textSize="28dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:background="#ccc"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"/>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="#125829"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="PROMEDIO MÁS ALTO DEL GRUPO:"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9.7"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="#ff8c00"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="PROMEDIO GENERAL DEL GRUPO:"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7.7"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="#ff00"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="PROMEDIO MÁS BAJO DEL GRUPO:"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6.2"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:background="#FFC000"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="Informe Especial"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="#125829"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_redondo_verde"
+            android:text="MATERIAS"
+            android:textColor="#fff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+			android:onClick="MostrarComboMaterias"/>
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_redondo_verde"
+            android:text="PERIODO"
+            android:textColor="#fff"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="18dp"
+            android:id="@+id/button"
+            android:onClick="MostrarComboPeriodo"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <CheckBox
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/tareas_check_on"/>
+
+
+        <CheckBox
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/examen_check_on"/>
+
+        <CheckBox
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/clase_check_on"/>
+    </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TAREAS"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EXÀMENES"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingRight="15dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TRABAJOS"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Generar reporte"
+                android:background="@drawable/boton_redondo_verde"
+                android:textColor="#fff"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+				android:onClick="MostrarGrafica"/>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/educarok"
+            android:layout_marginBottom="5dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

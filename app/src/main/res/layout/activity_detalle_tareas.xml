@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout style="@style/heading"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/evhomemenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/menu_home"
+            android:layout_marginRight="20dp"/>
+        <LinearLayout
+            android:id="@+id/evtareasmenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@mipmap/lapizmenu"
+            android:layout_marginRight="20dp"/>
+        <LinearLayout
+            android:id="@+id/evinformemenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/menu_informe"
+            android:layout_marginRight="20dp"/>
+        <LinearLayout
+            android:id="@+id/evcalendariomenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/menu_calendario"
+            android:layout_marginRight="20dp"/>
+        <LinearLayout
+            android:id="@+id/evmensajeriamenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/menu_mensajeria"
+            android:layout_marginRight="80dp"/>
+        <LinearLayout
+            android:id="@+id/evconfigmenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/menu_configuracion"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="Ciencias Naturales"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:id="@+id/txtMateria" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="Maqueta Sistema digestivo"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:id="@+id/txtTitulo" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Valor:"
+                android:layout_marginLeft="15dp"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:id="@+id/txtValorKey" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="3 puntos"
+                android:textSize="13dp"
+                android:id="@+id/txtValor" />
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asignada:17/mar/2017"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"/>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entrega:19/mar2017"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"/>
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="170dp"
+
+            android:text="Hacer una maqueta del Sistema digestivo para la próxima semana."
+            android:gravity="top"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="20dp"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="4dp"
+            android:background="#FFC000"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:textSize="15dp"
+            android:text="Materiales Requeridos"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="*Cartulina"
+            android:paddingLeft="15dp"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="*Plastilina"
+            android:paddingLeft="15dp"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="*Pintura"
+            android:paddingLeft="15dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textSize="30dp"
+            android:textColor="#FFC000"
+            android:background="@mipmap/arrowleft"/>
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textSize="30dp"
+            android:textColor="#FFC000"
+            android:background="@mipmap/red_trash"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textSize="30dp"
+            android:textColor="#FFC000"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/arrowright"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="anterior"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="siguiente"
+            android:layout_alignParentRight="true"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/educarok"
+            android:layout_marginBottom="5dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

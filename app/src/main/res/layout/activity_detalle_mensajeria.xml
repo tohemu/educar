@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout style="@style/heading"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <LinearLayout
+            android:id="@+id/evhomemenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/menu_home"
+            android:layout_marginRight="20dp"/>
+        <LinearLayout
+            android:id="@+id/evtareasmenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/menu_tareas"
+            android:layout_marginRight="20dp"/>
+        <LinearLayout
+            android:id="@+id/evinformemenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/menu_informe"
+            android:layout_marginRight="20dp"/>
+        <LinearLayout
+            android:id="@+id/evcalendariomenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/menu_calendario"
+            android:layout_marginRight="20dp"/>
+        <LinearLayout
+            android:id="@+id/evmensajeriamenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@mipmap/mensajeriamenu"
+            android:layout_marginRight="80dp"/>
+        <LinearLayout
+            android:id="@+id/evconfigmenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/menu_configuracion"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="10/mar/2017 \n 10:00am"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="Convivencia hijos"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="!"
+            android:layout_marginRight="55dp"
+            android:gravity="center"
+            android:textColor="#ff0000"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="*"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="45dp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"/>
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="230dp"
+            android:text="Su hijo es un cabron y rompio todos los vidrios del salon, se le solicita en la escuela mañana a x hora para salvar a su hijo"
+            android:gravity="top"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="20dp"
+            android:id="@+id/textView2" />
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textSize="30dp"
+            android:textColor="#FFC000"
+            android:background="@mipmap/arrowleft"/>
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textSize="30dp"
+            android:textColor="#FFC000"
+            android:background="@mipmap/yellow_trash"
+            android:layout_centerInParent="true"
+            android:visibility="visible"/>
+
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textSize="30dp"
+            android:textColor="#FFC000"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/arrowright"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mensaje\nAnterior"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Eliminar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mensaje\nSiguiente"
+            android:layout_alignParentRight="true"/>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:text="Marcar como leido"
+            android:background="@drawable/boton_redondo"
+            android:textColor="#000"/>
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:text="Borrar"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/boton_redondo"
+            android:textColor="#000"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/educarok"
+            android:layout_marginBottom="5dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

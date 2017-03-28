@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout style="@style/heading"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <LinearLayout
+            android:id="@+id/evhomemenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/menu_home"
+            android:layout_marginRight="20dp"
+			android:onClick="MostrarHome"/>
+        <LinearLayout
+            android:id="@+id/evtareasmenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@mipmap/lapizmenuhover"
+            android:layout_marginRight="20dp"
+			android:onClick="MostrarTareas"/>
+        <LinearLayout
+            android:id="@+id/evinformemenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/menu_informe"
+            android:layout_marginRight="20dp"
+			android:onClick="MostrarInforme"/>
+        <LinearLayout
+            android:id="@+id/evcalendariomenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/menu_calendario"
+            android:layout_marginRight="20dp"
+			android:onClick="MostrarCalendario"/>
+        <LinearLayout
+            android:id="@+id/evmensajeriamenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@mipmap/mensajeriamenu"
+            android:layout_marginRight="80dp"/>
+        <LinearLayout
+            android:id="@+id/evconfigmenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/menu_configuracion"
+            android:layout_marginRight="10dp"
+			android:onClick="MostrarMenuConfig"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:onClick="MostrarDetalle">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".3"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:text="5/ene/2017"
+                        android:layout_width="fill_parent"
+                        android:textColor="#666"
+                        android:textSize="11dp"
+                        android:textAlignment="center"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="3:00 pm"
+                        android:layout_width="fill_parent"
+                        android:textColor="#666"
+                        android:textSize="11dp"
+                        android:textAlignment="center"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Aviso de regreso a Clases"
+                        android:paddingLeft="10dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:text="Pues recordandole que traiga a sus parasitos ya el siguiente lunes..."
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:textColor="#666"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".3"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="!"
+                        android:gravity="center"
+                        android:textColor="#ff0000"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:layout_alignParentRight="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="*"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="45dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:layout_alignParentRight="true"/>
+
+                </LinearLayout>
+
+
+0
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#FFC000"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:onClick="MostrarDetalle">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".3"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:text="5/ene/2017"
+                        android:layout_width="fill_parent"
+                        android:textColor="#666"
+                        android:textSize="11dp"
+                        android:textAlignment="center"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="3:00 pm"
+                        android:layout_width="fill_parent"
+                        android:textColor="#666"
+                        android:textSize="11dp"
+                        android:textAlignment="center"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Avisso de año nuevo"
+                        android:paddingLeft="10dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:text="Los mejores deseos a uste y a su familia..."
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:textColor="#666"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".3"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="!"
+                        android:gravity="center"
+                        android:textColor="#ff0000"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:layout_alignParentRight="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="*"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:textColor="#ccc"
+                        android:textSize="45dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:layout_alignParentRight="true"/>
+
+                </LinearLayout>
+
+
+                0
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#FFC000"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:onClick="MostrarDetalle">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".3"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:text="5/ene/2017"
+                        android:layout_width="fill_parent"
+                        android:textColor="#666"
+                        android:textSize="11dp"
+                        android:textAlignment="center"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="3:00 pm"
+                        android:layout_width="fill_parent"
+                        android:textColor="#666"
+                        android:textSize="11dp"
+                        android:textAlignment="center"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Día del niño"
+                        android:paddingLeft="10dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:text="Se notifica que los niños deberan venir con ropa de..."
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:textColor="#666"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".3"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="!"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/textView3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="*"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="45dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:layout_alignParentRight="true"/>
+
+                </LinearLayout>
+
+
+                0
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#FFC000"/>
+
+
+    </LinearLayout>
+
+        
+    </ScrollView>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/educarok"
+            android:layout_marginBottom="5dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

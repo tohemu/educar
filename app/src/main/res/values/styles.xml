@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="heading">
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">#209847</item>
+
+    </style>
+
+    <style name="almostdeath">
+        <item name="android:textColor">#E78925</item>
+    </style>
+
+    <style name="death">
+        <item name="android:textColor">#990404</item>
+    </style>
+
+</resources>

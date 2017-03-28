@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout style="@style/heading"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <LinearLayout
+            android:id="@+id/evhomemenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/menu_home"
+            android:layout_marginRight="20dp"
+            android:onClick="MostrarHome"/>
+        <LinearLayout
+            android:id="@+id/evtareasmenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@mipmap/lapizmenuhover"
+            android:layout_marginRight="20dp"
+            android:onClick="MostrarTareas"/>
+        <LinearLayout
+            android:id="@+id/evinformemenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/menu_informe"
+            android:layout_marginRight="20dp"
+            android:onClick="MostrarInforme"/>
+        <LinearLayout
+            android:id="@+id/evcalendariomenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/menu_calendario"
+            android:layout_marginRight="20dp"
+            android:onClick="MostrarCalendario"/>
+        <LinearLayout
+            android:id="@+id/evmensajeriamenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@mipmap/mensajeriamenuhover"
+            android:layout_marginRight="80dp"
+            android:onClick="MostrarMensajeria"/>
+        <LinearLayout
+            android:id="@+id/evconfigmenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@mipmap/configicon"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="CONFIGURACIÓN"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#125829"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="CAMBIAR DE ALUMNO"
+                android:textStyle="bold"
+                android:paddingLeft="58dp"
+                android:layout_marginTop="20dp"/>
+
+            <RadioButton
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Ju89Lo06"/>
+            <RadioButton
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Ma91Lo04"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CORREO VINCULADO"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@mipmap/arrowdown"
+                    android:layout_marginLeft="110dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone">
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Nuevo correo electrónico"
+                    android:layout_marginBottom="5dp"/>
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Confirmar correo electrónico"/>
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingresa tu contraseña"
+                    android:inputType="textPassword"
+                    android:layout_marginBottom="5dp"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="55dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CAMBIAR CONTRASEÑA"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@mipmap/arrowdown"
+                    android:layout_marginLeft="90dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Contraseña anterior"
+                    android:inputType="textPassword"
+                    android:layout_marginBottom="5dp"/>
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Nueva contraseña"
+                    android:inputType="textPassword"
+                    android:layout_marginBottom="5dp"/>
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="Confirmar contraseña"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="FRECUENCIA DE NOTIFICACIONES"
+                android:textStyle="bold"
+                android:paddingLeft="58dp"
+                android:layout_marginTop="20dp"/>
+            <RadioButton
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Sonido/Vibración"/>
+            <RadioButton
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Solo bandeja de notificaciones"/>
+            <RadioButton
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Ninguna notificacion"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="55dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REVISAR TUTORIAL"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@mipmap/arrowdown"
+                    android:layout_marginLeft="120dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="APLICAR CAMBIOS"
+        android:background="@drawable/boton_redondo_amarillo"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/educarok"
+            android:layout_marginBottom="5dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

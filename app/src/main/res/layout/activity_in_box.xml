@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30sp"
+        android:background="#FFC000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Isaac Rodriguez Roldan"
+            android:textColor="#000"
+            android:paddingLeft="10dp"/>
+        <LinearLayout
+            android:id="@+id/evhomemenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@mipmap/homemenu"
+            android:layout_marginRight="10dp"/>
+        <LinearLayout
+            android:id="@+id/evtareasmenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@mipmap/lapizmenu"
+            android:layout_marginRight="10dp"/>
+        <LinearLayout
+            android:id="@+id/evinformemenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@mipmap/tareasmenu"
+            android:layout_marginRight="10dp"/>
+        <LinearLayout
+            android:id="@+id/evcalendariomenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@mipmap/calendariomenu"
+            android:layout_marginRight="10dp"/>
+        <LinearLayout
+            android:id="@+id/evmensajeriamenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@mipmap/mensajeriamenu"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <TableRow
+            android:padding="5dp">
+            <TextView
+                android:text="10/12/2017\n 10:30pm"
+                android:textSize="11dp"
+                android:textAlignment="center"
+                android:layout_weight=".3"
+                android:textColor="#666"/>
+            <TextView
+                android:text="Realizar un Resumen del Libro La visión de los vencidos de Miguel León Portilla para el día 2 de Febrero."
+                android:layout_width="250dp"
+                android:textColor="#666" />
+            <TextView
+                android:text="Pendiente"
+                android:layout_weight=".3"
+                android:textColor="#666"/>
+        </TableRow>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#FFC000"/>
+        <TableRow
+            android:padding="5dp">
+            <TextView
+                android:text="10/12/2017\n 10:30pm"
+                android:textSize="11dp"
+                android:textAlignment="center"
+                android:layout_weight=".3"
+                android:textColor="#666"/>
+            <TextView
+                android:text="Serie de Ejercicios de Ecuaciones de Segundo Grado para el día 23 de Enero."
+                android:layout_width="250dp"
+                android:textColor="#666" />
+            <TextView
+                android:text="Pendiente"
+                android:layout_weight=".3"
+                android:textColor="#666"/>
+        </TableRow>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#FFC000"/>
+        <TableRow
+            android:padding="5dp">
+            <TextView
+                android:text="10/12/2017\n 10:30pm"
+                android:textSize="11dp"
+                android:textAlignment="center"
+                android:layout_weight=".3"
+                android:textColor="#666"/>
+            <TextView
+                android:text="Lectura del Libro El Viejo y la Mar."
+                android:layout_width="250dp"
+                android:textColor="#666" />
+            <TextView
+                android:text="Entregada"
+                android:layout_weight=".3"
+                android:textColor="#666"/>
+        </TableRow>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#FFC000"/>
+
+
+    </TableLayout>
+
+</LinearLayout>

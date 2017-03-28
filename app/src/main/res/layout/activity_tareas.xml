@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="jueves 20 de enero"
+            android:gravity="center"
+            android:textSize="20dp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:text="asignadas"
+            android:background="#FF5252"
+            android:textColor="#fff"
+            android:layout_alignParentLeft="true"/>
+
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:text="Por Entregar"
+            android:layout_alignParentRight="true"
+            android:background="#FF5252"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TableRow
+            android:background="@color/colorPrimary"
+            android:padding="5dp">
+            <TextView
+                android:text="Asignatura"
+                android:layout_weight=".3"
+                android:textAlignment="center"
+                android:textColor="#fff"/>
+            <TextView
+                android:text="Descripción"
+                android:layout_width="250dp"
+                android:textAlignment="center"
+                android:textColor="#fff"/>
+            <TextView
+                android:text="Estatus"
+                android:layout_weight=".3"
+                android:textAlignment="center"
+                android:textColor="#fff"/>
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp">
+            <TextView
+                android:text="Historia"
+                android:layout_weight=".3"
+                android:textColor="#666"/>
+            <TextView
+                android:text="Realizar un Resumen del Libro La visión de los vencidos de Miguel León Portilla para el día 2 de Febrero."
+                android:layout_width="250dp"
+                android:textColor="#666" />
+            <TextView
+                android:text="Pendiente"
+                android:layout_weight=".3"
+                android:textColor="#666"/>
+        </TableRow>
+        <TableRow
+            android:padding="5dp">
+            <TextView
+                android:text="Matemáticas"
+                android:layout_weight=".3"
+                android:textColor="#666"/>
+            <TextView
+                android:text="Serie de Ejercicios de Ecuaciones de Segundo Grado para el día 23 de Enero."
+                android:layout_width="250dp"
+                android:textColor="#666" />
+            <TextView
+                android:text="Pendiente"
+                android:layout_weight=".3"
+                android:textColor="#666"/>
+        </TableRow>
+        <TableRow
+            android:padding="5dp">
+            <TextView
+                android:text="Literatura"
+                android:layout_weight=".3"
+                android:textColor="#666"/>
+            <TextView
+                android:text="Lectura del Libro El Viejo y la Mar."
+                android:layout_width="250dp"
+                android:textColor="#666" />
+            <TextView
+                android:text="Entregada"
+                android:layout_weight=".3"
+                android:textColor="#666"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</LinearLayout>
