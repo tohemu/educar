@@ -18,19 +18,22 @@
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@mipmap/homemenuhover"
-            android:layout_marginRight="20dp"/>
+            android:layout_marginRight="20dp"
+            android:onClick="MostrarHome"/>
         <LinearLayout
             android:id="@+id/evtareasmenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@mipmap/lapizmenuhover"
-            android:layout_marginRight="20dp"/>
+            android:layout_marginRight="20dp"
+            android:onClick="MostrarTareas"/>
         <LinearLayout
             android:id="@+id/evinformemenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@drawable/menu_informe"
-            android:layout_marginRight="20dp"/>
+            android:layout_marginRight="20dp"
+            android:onClick="MostrarInforme"/>
         <LinearLayout
             android:id="@+id/evcalendariomenu"
             android:layout_width="30sp"
@@ -42,13 +45,15 @@
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@drawable/menu_mensajeria"
-            android:layout_marginRight="80dp"/>
+            android:layout_marginRight="80dp"
+            android:onClick="MostrarMensajeria"/>
         <LinearLayout
-            android:id="@+id/evmensajeriamenu"
+            android:id="@+id/evcofigmenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@drawable/menu_configuracion"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:onClick="MostrarMenuConfig"/>
 
     </LinearLayout>
 

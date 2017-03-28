@@ -4,27 +4,19 @@
     android:layout_height="match_parent">
     <RelativeLayout style="@style/heading"
         android:layout_width="fill_parent"
-        android:background="@color/colorPrimaryDark"
+        android:background="#59923B"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingLeft="20dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:gravity="center"
-            android:textColor="#fff"
-            android:text="ALUMNO:Ju89Lo02"
-            android:paddingLeft="5dp"/>
-
         <LinearLayout
             android:id="@+id/evmensajeriamenu"
-            android:layout_marginTop="10dp"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@drawable/menu_configuracion"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="25dp"/>
+            android:layout_marginRight="25dp"
+            android:onClick="MostrarMenuConfig"/>
 
     </RelativeLayout>
 
@@ -39,7 +31,14 @@
             android:background="@mipmap/madrid"/>
 
     </LinearLayout>
-
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"
+        android:text="ALUMNO:Ju89Lo02"
+        android:padding="5dp"
+        android:textAlignment="center"/>
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -58,7 +57,8 @@
                 android:background="#FFC000"
                 android:onClick="GoToTareas"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="10dp">
                 <ImageView
                     android:layout_width="85dp"
                     android:layout_height="85dp"
@@ -78,7 +78,8 @@
                 android:background="#FFC000"
                 android:onClick="GoToInformes"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="10dp">
                 <ImageView
                     android:layout_width="85dp"
                     android:layout_height="85dp"
@@ -106,7 +107,8 @@
                 android:background="#FFC000"
                 android:onClick="GoToCalendario"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="10dp">
 
                 <ImageView
                     android:layout_width="85dp"
@@ -127,7 +129,8 @@
                 android:background="#FFC000"
                 android:onClick="GoToMensajeria"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="10dp">
 
                 <ImageView
                     android:layout_width="85dp"
@@ -149,7 +152,7 @@
 
     </LinearLayout>
     <TextView
-        android:layout_width="200dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="CERRAR SESIÓN"
@@ -158,7 +161,8 @@
         android:textSize="15dp"
         android:padding="10dp"
         android:background="@drawable/boton_redondo_rojo"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+		android:onClick="GoToLogin"/>
 
     <RelativeLayout
         android:layout_width="fill_parent"

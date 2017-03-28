@@ -13,13 +13,15 @@
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@drawable/menu_home"
-            android:layout_marginRight="20dp"/>
+            android:layout_marginRight="20dp"
+			android:onClick="MostrarHome"/>
         <LinearLayout
             android:id="@+id/evtareasmenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@drawable/menu_tareas"
-            android:layout_marginRight="20dp"/>
+            android:layout_marginRight="20dp"
+			android:onClick="MostrarTareas"/>
         <LinearLayout
             android:id="@+id/evinformemenu"
             android:layout_width="30sp"
@@ -31,19 +33,22 @@
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@drawable/menu_calendario"
-            android:layout_marginRight="20dp"/>
+            android:layout_marginRight="20dp"
+			android:onClick="MostrarCalendario"/>
         <LinearLayout
             android:id="@+id/evmensajeriamenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@drawable/menu_mensajeria"
-            android:layout_marginRight="80dp"/>
+            android:layout_marginRight="80dp"
+			android:onClick="MostrarMensajeria"/>
         <LinearLayout
-            android:id="@+id/evmensajeriamenu"
+            android:id="@+id/evconfigmenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@drawable/menu_configuracion"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+			android:onClick="MostrarMenuConfig"/>
 
     </LinearLayout>
 
@@ -67,7 +72,7 @@
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"
-                android:text="INFORME GENERAL"
+                android:text="Informe General"
                 android:textStyle="bold"
                 android:textSize="20dp"
                 android:gravity="center"
@@ -82,7 +87,7 @@
                 <LinearLayout
                     android:layout_width="150dp"
                     android:layout_height="70dp"
-                    android:background="@color/colorPrimaryDark"
+                    android:background="#125829"
                     android:layout_marginLeft="20dp"
                     android:gravity="center"
                     android:orientation="vertical">
@@ -171,7 +176,7 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="30dp"
-            android:background="@color/colorPrimaryDark"
+            android:background="#125829"
             android:gravity="center_vertical"
             android:layout_marginTop="5dp">
             <TextView
@@ -216,7 +221,7 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="30dp"
-            android:background="#FF5252"
+            android:background="#ff00"
             android:gravity="center_vertical"
             android:layout_marginTop="5dp">
             <TextView
@@ -244,7 +249,7 @@
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"
-                android:text="INFORME ESPECIAL"
+                android:text="Informe Especial"
                 android:textStyle="bold"
                 android:textSize="20dp"
                 android:gravity="center"
@@ -257,28 +262,31 @@
         <Button
             android:layout_width="160dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/boton_redondo_amarillo"
+            android:background="@drawable/boton_redondo_verde"
             android:text="MATERIAS"
-            android:textColor="#000"
+            android:textColor="#fff"
             android:layout_marginLeft="20dp"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginBottom="10dp"
+			android:onClick="MostrarComboMaterias"/>
 
         <Button
             android:layout_width="160dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/boton_redondo_amarillo"
+            android:background="@drawable/boton_redondo_verde"
             android:text="PERIODO"
-            android:textColor="#000"
+            android:textColor="#fff"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="18dp"
-            android:id="@+id/button" />
+            android:id="@+id/button"
+            android:onClick="MostrarComboPeriodo"/>
     </RelativeLayout>
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
 
         <CheckBox
             android:layout_width="100dp"
@@ -311,7 +319,7 @@
                     android:layout_weight=".3"
                     android:layout_height="wrap_content"
                     android:gravity="center">
-                    <TextView style="@style/informelabel"
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="TAREAS"/>
@@ -323,7 +331,7 @@
                     android:layout_weight=".3"
                     android:layout_height="wrap_content"
                     android:gravity="center">
-                    <TextView style="@style/informelabel"
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="EXÀMENES"/>
@@ -336,10 +344,10 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:paddingRight="15dp">
-                    <TextView style="@style/informelabel"
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="CLASE"/>
+                        android:text="TRABAJOS"/>
 
 
                 </LinearLayout>
@@ -351,13 +359,14 @@
                 android:layout_width="200dp"
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
-                android:text="Generar informe"
-                android:background="@drawable/boton_redondo_amarillo"
-                android:textColor="#000"
+                android:text="Generar reporte"
+                android:background="@drawable/boton_redondo_verde"
+                android:textColor="#fff"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+				android:onClick="MostrarGrafica"/>
 
 
 

@@ -13,33 +13,38 @@
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@drawable/menu_home"
-            android:layout_marginRight="20dp"/>
+            android:layout_marginRight="20dp"
+            android:onClick="MostrarHome"/>
         <LinearLayout
             android:id="@+id/evtareasmenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@mipmap/lapizmenuhover"
-            android:layout_marginRight="20dp"/>
+            android:layout_marginRight="20dp"
+            android:onClick="MostrarTareas"/>
         <LinearLayout
             android:id="@+id/evinformemenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@drawable/menu_informe"
-            android:layout_marginRight="20dp"/>
+            android:layout_marginRight="20dp"
+            android:onClick="MostrarInforme"/>
         <LinearLayout
             android:id="@+id/evcalendariomenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@drawable/menu_calendario"
-            android:layout_marginRight="20dp"/>
+            android:layout_marginRight="20dp"
+            android:onClick="MostrarCalendario"/>
         <LinearLayout
             android:id="@+id/evmensajeriamenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@mipmap/mensajeriamenuhover"
-            android:layout_marginRight="80dp"/>
+            android:layout_marginRight="80dp"
+            android:onClick="MostrarMensajeria"/>
         <LinearLayout
-            android:id="@+id/evmensajeriamenu"
+            android:id="@+id/evconfigmenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@mipmap/configicon"
