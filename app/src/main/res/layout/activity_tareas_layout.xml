@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Matemáticas"
+            android:layout_width="100dp"
+            android:textColor="#666"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_height="fill_parent"/>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Ejercicios de repaso"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:text="Pagina 14 y 15 del libro de ejercicios de baldor."
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:textColor="#666"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:text="17-03-2017"
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:textColor="#666"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:layout_height="fill_parent"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:background="#FFC000"/>
+
+</LinearLayout>

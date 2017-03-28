@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:clickable="true"
-    android:focusable="true">
-
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <LinearLayout style="@style/heading"
         android:layout_width="fill_parent"
+        android:background="#125829"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingLeft="20dp">
@@ -17,13 +13,13 @@
             android:id="@+id/evhomemenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
-            android:background="@mipmap/homemenuhover"
+            android:background="@drawable/menu_home"
             android:layout_marginRight="20dp"/>
         <LinearLayout
             android:id="@+id/evtareasmenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
-            android:background="@mipmap/lapizmenuhover"
+            android:background="@drawable/menu_tareas"
             android:layout_marginRight="20dp"/>
         <LinearLayout
             android:id="@+id/evinformemenu"
@@ -35,7 +31,7 @@
             android:id="@+id/evcalendariomenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
-            android:background="@mipmap/calendariomenu"
+            android:background="@drawable/menu_calendario"
             android:layout_marginRight="20dp"/>
         <LinearLayout
             android:id="@+id/evmensajeriamenu"
@@ -51,39 +47,5 @@
             android:layout_marginRight="10dp"/>
 
     </LinearLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5"
-        android:clickable="true"
-        android:focusable="true">
-
-        <CalendarView
-            android:id="@+id/calendarView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:adjustViewBounds="true"
-            android:clickable="true"
-            android:weekNumberColor="@color/colorPrimary"
-            android:addStatesFromChildren="false"
-            android:weekDayTextAppearance="@color/colorPrimary"
-            android:weekSeparatorLineColor="#ff0000"/>
-
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:gravity="center">
-
-        <ImageView
-            android:layout_width="110dp"
-            android:layout_height="30dp"
-            android:background="@mipmap/educarok"
-            android:layout_marginBottom="5dp"/>
-
-    </RelativeLayout>
 
 </LinearLayout>

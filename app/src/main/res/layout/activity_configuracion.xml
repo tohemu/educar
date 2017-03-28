@@ -14,38 +14,33 @@
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@drawable/menu_home"
-            android:layout_marginRight="20dp"
-            android:onClick="MostrarHome"/>
+            android:layout_marginRight="20dp"/>
         <LinearLayout
             android:id="@+id/evtareasmenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
-            android:background="@mipmap/lapizmenuhover"
-            android:layout_marginRight="20dp"
-            android:onClick="MostrarTareas"/>
+            android:background="@drawable/menu_tareas"
+            android:layout_marginRight="20dp"/>
         <LinearLayout
             android:id="@+id/evinformemenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@drawable/menu_informe"
-            android:layout_marginRight="20dp"
-            android:onClick="MostrarInforme"/>
+            android:layout_marginRight="20dp"/>
         <LinearLayout
             android:id="@+id/evcalendariomenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@drawable/menu_calendario"
-            android:layout_marginRight="20dp"
-            android:onClick="MostrarCalendario"/>
+            android:layout_marginRight="20dp"/>
         <LinearLayout
             android:id="@+id/evmensajeriamenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@mipmap/mensajeriamenuhover"
-            android:layout_marginRight="80dp"
-            android:onClick="MostrarMensajeria"/>
+            android:layout_marginRight="80dp"/>
         <LinearLayout
-            android:id="@+id/evconfigmenu"
+            android:id="@+id/evmensajeriamenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@mipmap/configicon"
@@ -101,7 +96,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"/>
-
+   
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
