@@ -24,7 +24,8 @@
             android:layout_height="30sp"
             android:background="@drawable/menu_configuracion"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="25dp"/>
+            android:layout_marginRight="25dp"
+            android:orientation="vertical"/>
 
     </RelativeLayout>
 
@@ -143,10 +144,6 @@
             </LinearLayout>
 
         </LinearLayout>
-
-
-
-
     </LinearLayout>
     <Button
         android:layout_width="200dp"

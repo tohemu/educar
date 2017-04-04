@@ -64,7 +64,8 @@
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:paddingLeft="55dp">
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -75,7 +76,7 @@
                 android:layout_height="wrap_content"
                 android:text="CAMBIAR DE ALUMNO"
                 android:textStyle="bold"
-                android:paddingLeft="58dp"
+
                 android:layout_marginTop="20dp"/>
 
             <RadioButton
@@ -89,7 +90,7 @@
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+
                 android:layout_marginTop="20dp">
 
                 <TextView
@@ -101,7 +102,7 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:background="@mipmap/arrowdown"
-                    android:layout_marginLeft="110dp"/>
+                    android:layout_marginLeft="115dp"/>
 
             </LinearLayout>
 
@@ -111,21 +112,21 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:visibility="gone">
+                android:visibility="visible">
                 <EditText
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:hint="Nuevo correo electrónico"
+                    android:hint="Contraseña"
                     android:layout_marginBottom="5dp"/>
 
                 <EditText
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:hint="Confirmar correo electrónico"/>
+                    android:hint="Nuevo correo"/>
                 <EditText
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:hint="Ingresa tu contraseña"
+                    android:hint="Confirmar Correo"
                     android:inputType="textPassword"
                     android:layout_marginBottom="5dp"/>
 
@@ -136,7 +137,6 @@
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="55dp"
                 android:layout_marginTop="20dp">
 
                 <TextView
@@ -156,7 +156,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:visibility="gone">
+                android:visibility="visible">
 
                 <EditText
                     android:layout_width="250dp"
@@ -185,7 +185,6 @@
                 android:layout_height="wrap_content"
                 android:text="FRECUENCIA DE NOTIFICACIONES"
                 android:textStyle="bold"
-                android:paddingLeft="58dp"
                 android:layout_marginTop="20dp"/>
             <RadioButton
                 android:layout_width="250dp"
@@ -202,7 +201,6 @@
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="55dp"
                 android:layout_marginTop="20dp">
 
                 <TextView
