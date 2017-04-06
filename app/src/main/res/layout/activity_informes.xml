@@ -72,7 +72,7 @@
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"
-                android:text="Informe General"
+                android:text="INFORME GENERAL"
                 android:textStyle="bold"
                 android:textSize="20dp"
                 android:gravity="center"
@@ -87,7 +87,7 @@
                 <LinearLayout
                     android:layout_width="150dp"
                     android:layout_height="70dp"
-                    android:background="#125829"
+                    android:background="@color/colorPrimaryDark"
                     android:layout_marginLeft="20dp"
                     android:gravity="center"
                     android:orientation="vertical">
@@ -136,35 +136,35 @@
             </RelativeLayout>
 
             <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp">
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="50dp"
-            android:background="#ff8c00"
-            android:gravity="center_vertical">
-            <TextView
-                android:layout_width="250dp"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#fff"
-                android:textSize="15dp"
-                android:text="PROMEDIO GENERAL DEL ALUMNO:"
-                android:layout_marginLeft="15dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="7.8"
-                android:layout_marginLeft="15dp"
-                android:textSize="28dp"
-                android:textColor="#fff"/>
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
 
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="#ff8c00"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:textSize="15dp"
+                        android:text="PROMEDIO GENERAL DEL ALUMNO:"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7.8"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="28dp"
+                        android:textColor="#fff"/>
+
+                </LinearLayout>
                 <View
                     android:layout_width="fill_parent"
                     android:layout_height="3dp"
@@ -173,143 +173,142 @@
                     android:layout_marginBottom="5dp"/>
 
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="30dp"
-            android:background="#125829"
-            android:gravity="center_vertical"
-            android:layout_marginTop="5dp">
-            <TextView
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:textColor="#fff"
-                android:text="PROMEDIO MÁS ALTO DEL GRUPO:"
-                android:layout_marginLeft="15dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="9.7"
-                android:layout_marginLeft="20dp"
-                android:textSize="20dp"
-                android:textColor="#fff"/>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="5dp">
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:text="PROMEDIO MÁS ALTO DEL GRUPO:"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9.7"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="20dp"
+                        android:textColor="#fff"/>
 
-        </LinearLayout>
+                </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="30dp"
-            android:background="#ff8c00"
-            android:gravity="center_vertical"
-            android:layout_marginTop="5dp">
-            <TextView
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:textColor="#fff"
-                android:text="PROMEDIO GENERAL DEL GRUPO:"
-                android:layout_marginLeft="15dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="7.7"
-                android:layout_marginLeft="20dp"
-                android:textSize="20dp"
-                android:textColor="#fff"/>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:background="#ff8c00"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="5dp">
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:text="PROMEDIO GENERAL DEL GRUPO:"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7.7"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="20dp"
+                        android:textColor="#fff"/>
 
-        </LinearLayout>
+                </LinearLayout>
 
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="30dp"
-            android:background="#ff00"
-            android:gravity="center_vertical"
-            android:layout_marginTop="5dp">
-            <TextView
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:textColor="#fff"
-                android:text="PROMEDIO MÁS BAJO DEL GRUPO:"
-                android:layout_marginLeft="15dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="6.2"
-                android:layout_marginLeft="20dp"
-                android:textSize="20dp"
-                android:textColor="#fff"/>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:background="#FF5252"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="5dp">
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:text="PROMEDIO MÁS BAJO DEL GRUPO:"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6.2"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="20dp"
+                        android:textColor="#fff"/>
 
-        </LinearLayout>
+                </LinearLayout>
 
-    </LinearLayout>
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="3dp"
-        android:background="#FFC000"/>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#FFC000"/>
 
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"
-                android:text="Informe Especial"
+                android:text="INFORME ESPECIAL"
                 android:textStyle="bold"
                 android:textSize="20dp"
                 android:gravity="center"
                 android:textColor="#125829"/>
 
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
 
-        <Button
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/boton_redondo_verde"
-            android:text="MATERIAS"
-            android:textColor="#fff"
-            android:layout_marginLeft="20dp"
-            android:layout_marginBottom="10dp"
-			android:onClick="MostrarComboMaterias"/>
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boton_redondo_amarillo"
+                    android:text="MATERIAS"
+                    android:textColor="#000"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="MostrarComboMaterias"/>
 
-        <Button
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/boton_redondo_verde"
-            android:text="PERIODO"
-            android:textColor="#fff"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="18dp"
-            android:id="@+id/button"
-            android:onClick="MostrarComboPeriodo"/>
-    </RelativeLayout>
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp">
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boton_redondo_amarillo"
+                    android:text="PERIODO"
+                    android:textColor="#000"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="18dp"
+                    android:id="@+id/button"
+                    android:onClick="MostrarComboPeriodo"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
 
-        <CheckBox
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="20dp"
-            android:button="@android:color/transparent"
-            android:background="@drawable/tareas_check_on"/>
+                <CheckBox
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/tareas_check_on"/>
 
 
-        <CheckBox
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="20dp"
-            android:button="@android:color/transparent"
-            android:background="@drawable/examen_check_on"/>
+                <CheckBox
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/examen_check_on"/>
 
-        <CheckBox
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="20dp"
-            android:button="@android:color/transparent"
-            android:background="@drawable/clase_check_on"/>
-    </LinearLayout>
+                <CheckBox
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/clase_check_on"/>
+            </LinearLayout>
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -319,7 +318,7 @@
                     android:layout_weight=".3"
                     android:layout_height="wrap_content"
                     android:gravity="center">
-                    <TextView
+                    <TextView style="@style/informelabel"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="TAREAS"/>
@@ -331,7 +330,7 @@
                     android:layout_weight=".3"
                     android:layout_height="wrap_content"
                     android:gravity="center">
-                    <TextView
+                    <TextView style="@style/informelabel"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="EXÀMENES"/>
@@ -344,10 +343,10 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:paddingRight="15dp">
-                    <TextView
+                    <TextView style="@style/informelabel"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TRABAJOS"/>
+                        android:text="CLASE"/>
 
 
                 </LinearLayout>
@@ -359,14 +358,14 @@
                 android:layout_width="200dp"
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
-                android:text="Generar reporte"
-                android:background="@drawable/boton_redondo_verde"
-                android:textColor="#fff"
+                android:text="Generar informe"
+                android:background="@drawable/boton_redondo_amarillo"
+                android:textColor="#000"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
-				android:onClick="MostrarGrafica"/>
+                android:onClick="MostrarGrafica"/>
 
 
 

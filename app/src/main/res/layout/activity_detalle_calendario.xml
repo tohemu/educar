@@ -67,7 +67,7 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="De: 28/feb/2017 a 01/mar/2017"
+            android:text="De 28/feb/2017 a 01/mar/2017"
             android:layout_marginLeft="20dp"
             android:textSize="13dp"
             android:gravity="center"

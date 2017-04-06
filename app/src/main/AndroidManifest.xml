@@ -18,9 +18,6 @@
             android:name=".HomeActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".TareasActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity
             android:name=".CalendarioActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
@@ -30,12 +27,8 @@
             android:name=".MensajeriaActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".Tareas2Activity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity
             android:name=".GraficaActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".TestActivity" />
         <activity
             android:name=".Tareas3Activity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
@@ -50,9 +43,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".InBoxActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".Grafica2Activity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
