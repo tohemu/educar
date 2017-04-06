@@ -140,7 +140,7 @@ public class InformesActivity extends AppCompatActivity {
     }
 
     public void MostrarCalendario(View v) {
-        Intent i = new Intent(getBaseContext(), CalendarioActivity.class);
+        Intent i = new Intent(getBaseContext(), Calendario2Activity.class);
         startActivity(i);
     }
 
