@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout style="@style/heading"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <LinearLayout
+            android:id="@+id/evhomemenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@mipmap/homemenuhover"
+            android:layout_marginRight="20dp"
+            android:onClick="MostrarHome"/>
+        <LinearLayout
+            android:id="@+id/evtareasmenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@mipmap/lapizmenuhover"
+            android:layout_marginRight="20dp"
+            android:onClick="MostrarTareas"/>
+        <LinearLayout
+            android:id="@+id/evinformemenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/menu_informe"
+            android:layout_marginRight="20dp"
+            android:onClick="MostrarInforme"/>
+        <LinearLayout
+            android:id="@+id/evcalendariomenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@mipmap/calendariomenu"
+            android:layout_marginRight="20dp"/>
+        <LinearLayout
+            android:id="@+id/evmensajeriamenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/menu_mensajeria"
+            android:layout_marginRight="80dp"
+            android:onClick="MostrarMensajeria"/>
+        <LinearLayout
+            android:id="@+id/evcofigmenu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/menu_configuracion"
+            android:layout_marginRight="10dp"
+            android:onClick="MostrarMenuConfig"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:clickable="true"
+        android:focusable="true">
+
+        <com.phlox.datepick.CalendarPickerView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/educarok"
+            android:layout_marginBottom="5dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
