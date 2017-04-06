@@ -9,14 +9,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 
-public class Tareas3Activity extends AppCompatActivity {
+public class Calendario2Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_tareas3);
+        setContentView(R.layout.activity_calendario2);
     }
 
     public void MostrarHome(View v) {
@@ -29,8 +29,8 @@ public class Tareas3Activity extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void MostrarCalendario(View v) {
-        Intent i = new Intent(getBaseContext(), Calendario2Activity.class);
+    public void MostrarTareas(View v) {
+        Intent i = new Intent(getBaseContext(), Tareas3Activity.class);
         startActivity(i);
     }
 
@@ -41,11 +41,6 @@ public class Tareas3Activity extends AppCompatActivity {
 
     public void MostrarAcerca(View v){
         Intent i = new Intent(getBaseContext(), AboutActivity.class);
-        startActivity(i);
-    }
-
-    public void MostrarDetalle(View v){
-        Intent i = new Intent(getBaseContext(), DetalleTareasActivity.class);
         startActivity(i);
     }
 
