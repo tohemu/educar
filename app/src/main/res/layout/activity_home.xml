@@ -158,7 +158,8 @@
         android:padding="10dp"
         android:background="@drawable/boton_redondo_rojo"
         android:layout_gravity="center"
-        android:id="@+id/textView4"/>
+        android:id="@+id/textView4"
+        android:onClick="GoToLogin"/>
 
     <RelativeLayout
         android:layout_width="fill_parent"
