@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clickable="true"
-    android:focusable="true">
+    android:focusable="true"
+    android:background="#fff">
 
     <LinearLayout style="@style/heading"
         android:layout_width="fill_parent"
