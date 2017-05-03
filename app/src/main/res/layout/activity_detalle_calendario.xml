@@ -15,37 +15,43 @@
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@drawable/menu_home"
-            android:layout_marginRight="20dp"/>
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"/>
         <LinearLayout
             android:id="@+id/evtareasmenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@mipmap/lapizmenu"
-            android:layout_marginRight="20dp"/>
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"/>
         <LinearLayout
             android:id="@+id/evinformemenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@drawable/menu_informe"
-            android:layout_marginRight="20dp"/>
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"/>
         <LinearLayout
             android:id="@+id/evcalendariomenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@drawable/menu_calendario"
-            android:layout_marginRight="20dp"/>
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"/>
         <LinearLayout
             android:id="@+id/evmensajeriamenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@drawable/menu_mensajeria"
-            android:layout_marginRight="80dp"/>
+            android:layout_marginRight="80dp"
+            android:orientation="horizontal"/>
         <LinearLayout
-            android:id="@+id/evmensajeriamenu"
+            android:id="@+id/evcofigmenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@drawable/menu_configuracion"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"/>
 
     </LinearLayout>
 
@@ -55,61 +61,11 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical">
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="30dp"
-            android:text="Convivencia con hijos"
-            android:gravity="center"
-            android:textSize="18dp"
-            android:textStyle="bold"
-            android:id="@+id/txtTitulo" />
 
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="De 28/feb/2017 a 01/mar/2017"
-            android:layout_marginLeft="20dp"
-            android:textSize="13dp"
-            android:gravity="center"
-            android:id="@+id/txtFecha" />
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="9:00am a 11:00am"
-            android:layout_marginLeft="20dp"
-            android:textSize="13dp"
-            android:gravity="center"
-            android:id="@+id/txtHora" />
-
-
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="170dp"
-            android:text="Como cada mes se solcita su participacion en la convivencia de padres he hijos no falte no mame"
-            android:gravity="top"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:paddingTop="20dp"/>
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="4dp"
-            android:background="#FFC000"/>
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="20dp"
-            android:textSize="15dp"
-            android:text="Participación de los padres"
-            android:gravity="center_horizontal"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"/>
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:text="Se le solicita a los padres asistir al evento de  convivencia con ropa comoda y chingones" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_evento_det"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 
     </LinearLayout>
 

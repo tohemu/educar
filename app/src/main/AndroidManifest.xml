@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -51,7 +52,7 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".DetalleCalendarioActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@style/AppThemeAB" />
         <activity
             android:name=".DetalleTareasActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
@@ -67,7 +68,8 @@
         <activity
             android:name=".CambioUserActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".Calendario2Activity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" ></activity>
+        <activity android:name=".Calendario2Activity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
 
 </manifest>

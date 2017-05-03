@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -19,41 +18,47 @@
             android:layout_height="30sp"
             android:background="@mipmap/homemenuhover"
             android:layout_marginRight="20dp"
-            android:onClick="MostrarHome"/>
+            android:onClick="MostrarHome"
+            android:orientation="horizontal"/>
         <LinearLayout
             android:id="@+id/evtareasmenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@mipmap/lapizmenuhover"
             android:layout_marginRight="20dp"
-            android:onClick="MostrarTareas"/>
+            android:onClick="MostrarTareas"
+            android:orientation="horizontal"/>
         <LinearLayout
             android:id="@+id/evinformemenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@drawable/menu_informe"
             android:layout_marginRight="20dp"
-            android:onClick="MostrarInforme"/>
+            android:onClick="MostrarInforme"
+            android:orientation="horizontal"/>
         <LinearLayout
             android:id="@+id/evcalendariomenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@mipmap/calendariomenu"
-            android:layout_marginRight="20dp"/>
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"/>
         <LinearLayout
             android:id="@+id/evmensajeriamenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@drawable/menu_mensajeria"
             android:layout_marginRight="80dp"
-            android:onClick="MostrarMensajeria"/>
+            android:onClick="MostrarMensajeria"
+            android:orientation="horizontal"/>
         <LinearLayout
             android:id="@+id/evcofigmenu"
             android:layout_width="30sp"
             android:layout_height="30sp"
             android:background="@drawable/menu_configuracion"
             android:layout_marginRight="10dp"
-            android:onClick="MostrarMenuConfig"/>
+            android:onClick="MostrarMenuConfig"
+            android:orientation="horizontal"/>
 
     </LinearLayout>
 
@@ -64,10 +69,16 @@
         android:clickable="true"
         android:focusable="true">
 
-        <com.phlox.datepick.CalendarPickerView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/view"
+        <!--<com.phlox.datepick.CalendarPickerView-->
+            <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--android:id="@+id/view"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+        <com.desai.vatsal.mydynamiccalendar.MyDynamicCalendar
+            android:id="@+id/myCalendar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"/>
 
     </RelativeLayout>
     <RelativeLayout
