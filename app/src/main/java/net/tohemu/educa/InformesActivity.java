@@ -252,7 +252,7 @@ public class InformesActivity extends AppCompatActivity {
                     startActivity(i);
 
                 } catch (Exception e){
-                    Log.d(LOG_TAG, "Error en el metodo marcaEventos(), causa: "+e.toString());
+                    //Log.d(LOG_TAG, "Error en el metodo marcaEventos(), causa: "+e.toString());
                 }
             }
         }).execute(Constantes.URL_GET_EVENTOS);
