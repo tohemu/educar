@@ -42,6 +42,7 @@ public class HomeActivity extends AppCompatActivity {
 
     public void GoToTareas(View v) {
         Intent i = new Intent(getBaseContext(), Tareas3Activity.class);
+        i.putExtra(Tareas3Activity.ARG_FECHA, "OK");
         startActivity(i);
     }
 

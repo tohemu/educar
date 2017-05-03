@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#fff">
+
     <RelativeLayout style="@style/heading"
         android:layout_width="fill_parent"
         android:background="@color/colorPrimaryDark"
@@ -24,7 +26,8 @@
             android:layout_height="30sp"
             android:background="@drawable/menu_configuracion"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="25dp"/>
+            android:layout_marginRight="25dp"
+            android:orientation="vertical"/>
 
     </RelativeLayout>
 
@@ -143,10 +146,6 @@
             </LinearLayout>
 
         </LinearLayout>
-
-
-
-
     </LinearLayout>
     <Button
         android:layout_width="200dp"
